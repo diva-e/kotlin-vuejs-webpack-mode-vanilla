@@ -1,0 +1,36 @@
+{
+	"name": "kotlin-vuejs-webpack-mode-vanilla",
+	"version": "1.0.0",
+	"license": "Apache License",
+	"private": true,
+	"scripts": {
+		"start": "webpack-dev-server --inline --progress --port 3000 --host 0.0.0.0",
+		"server": "json-server --watch testdata/db.json --port 9000"
+	},
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/diva-e/kotlin-vuejs-webpack-nmode-vanilla.git"
+	},
+	"devDependencies": {
+		"@princed/source-map-loader": "^0.2.1",
+		"bootstrap": "^3.3.7",
+		"css-loader": "^0.28.4",
+		"file-loader": "^0.11.2",
+		"html-webpack-plugin": "^2.29.0",
+		"json-server": "^0.11.2",
+		"kotlin": "^1.1.3",
+		"kotlin-webpack-plugin": "^1.0.5",
+		"raw-loader": "^0.5.1",
+		"style-loader": "^0.18.2",
+		"vue-loader": "^13.0.2",
+		"vue-template-compiler": "^2.4.2",
+		"webpack": "^3.4.1",
+		"webpack-dev-server": "^2.6.1"
+	},
+	"dependencies": {
+		"axios": "^0.16.2",
+		"jquery": "^3.2.1",
+		"vue": "^2.4.2"
+	},
+	"kotlinPackage": "com.divae"
+}

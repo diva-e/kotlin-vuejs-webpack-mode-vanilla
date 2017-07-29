@@ -1,0 +1,6 @@
+:root {
+    --font-size-base: 14px;
+    --font-size-large: calc(var(--font-size-base) * 1.25);
+    --line-height-base: 1.428571429;
+    --alert-padding: 15px;
+}
