@@ -1,8 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
-const KotlinWebpackPlugin = require("kotlin-webpack-plugin");
+const KotlinWebpackPlugin = require("@jetbrains/kotlin-webpack-plugin");
 const sourceDirectory = 'src';
 const packageDirectory = require('./package.json').kotlinPackage.replace(new RegExp('\\.', 'g'), '/');
 
@@ -60,10 +59,7 @@ module.exports = {
         new webpack.ProvidePlugin({
             jQuery: 'jquery',
             $: 'jquery',
-            jquery: 'jquery'
-        }),
-        new CommonsChunkPlugin({
-            names: ["kotlinApp", "vendor"]
+            Popper: 'popper.js'
         }),
         new KotlinWebpackPlugin({
             src: __dirname + `/${sourceDirectory}`
